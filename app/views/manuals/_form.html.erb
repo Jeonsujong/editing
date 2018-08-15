@@ -21,8 +21,7 @@
 
   <div class="field">
       <%= f.label :내용 %>
-      <%= tinymce :language => "en" %>
-      <%= f.text_area :content, class: "form-control tinymce", rows: "10" %>
+      <%= f.cktext_area :content, value: 'Default value', id: 'sometext' %>
   </div>
 
   <div class="field">
